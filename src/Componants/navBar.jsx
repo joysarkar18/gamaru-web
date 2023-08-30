@@ -13,7 +13,7 @@ const NavBar = (props) => {
     { id: 5, link: "contact" },
   ];
   return (
-    <div>
+    <div className="fixed w-screen z-30" >
       <nav class="bg-white border-gray-200 dark:bg-gray-900">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" class="flex items-center">
@@ -59,7 +59,7 @@ const NavBar = (props) => {
       {props.nav && <nav className=   "flex md:hidden align-top justify-end z-10 ">
         <div className="h-full w-52 bg-gray-900 ">
 
-        <ul class="font-medium flex flex-col p-4 md:p-0  bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <ul class="font-medium flex flex-col p-4 md:p-0  bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-900 md:dark:bg-gray-900 dark:border-gray-900">
               {links.map((link) => {
                 return (
                   <li>

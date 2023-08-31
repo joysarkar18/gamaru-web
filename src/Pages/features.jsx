@@ -13,7 +13,7 @@ const Features = () => {
         <div className="columns-1 md:columns-3 gap-44">
           <Cardx
             logo={
-              <img src="src/assets/gPay.webp" alt="Logo" className="logo-img" />
+              <img src="public/assets/gPay.webp" alt="Logo" className="logo-img" />
             }
             heading="Instant Withdraw"
             details="Get instant withdraw to your UPI Id."
@@ -22,7 +22,7 @@ const Features = () => {
             
           <Cardx
             logo={
-              <img src="src/assets/coins.png" alt="Logo" className="logo-img" />
+              <img src="public/assets/coins.png" alt="Logo" className="logo-img" />
             }
             heading="Prizes per Kill Event"
             details="Get prizes not only for winning also for kills."
@@ -32,7 +32,7 @@ const Features = () => {
           <Cardx
             logo={
               <img
-                src="src/assets/banPan.png"
+                src="public/assets/banPan.png"
                 alt="Logo"
                 className="logo-img"
               />
@@ -46,7 +46,7 @@ const Features = () => {
         <div className="columns-1 md:columns-3 gap-32">
           <Cardx
             logo={
-              <img src="src/assets/reee.png" alt="Logo" className="logo-img" />
+              <img src="public/assets/reee.png" alt="Logo" className="logo-img" />
             }
             heading="Refer Friends & Earn"
             details="Additional details about the card."
@@ -55,7 +55,7 @@ const Features = () => {
 
           <Cardx
             logo={
-              <img src="src/assets/liveStram.png" alt="Logo" className="logo-img" />
+              <img src="public/assets/liveStram.png" alt="Logo" className="logo-img" />
             }
             heading="Live Stream of Evevnt"
             details="Additional details about the card."
@@ -65,7 +65,7 @@ const Features = () => {
           <Cardx
             logo={
               <img
-                src="src/assets/customer.png"
+                src="public/assets/customer.png"
                 alt="Logo"
                 className="logo-img"
               />

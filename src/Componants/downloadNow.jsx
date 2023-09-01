@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from "lottie-react";
-import downloadNow from "../../public/assets/downloadNow.json"
+import downloadNow from "../json/downloadNow.json"
 
 
 const DownloadNow = () => {

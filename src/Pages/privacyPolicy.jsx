@@ -1,12 +1,15 @@
 // PrivacyPolicy.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const PrivacyPolicy = () => {
   return (
     <div name="privacy policy" className="min-h-screen bg-slate-800 p-8 flex flex-col items-center">
+         <Link to="/privacy-policy">
          <h1 className="text-gray-200 text-2xl font-extrabold md:text-4xl pb-5">
         Privacy Policy
       </h1>
+         </Link>
       <div className=" w-screen md:w-2/4 p-5 md:mx-auto bg-gray-300 md:p-8 rounded shadow">
         <h1 className="text-2xl font-bold mb-4">GAMARU Privacy Policy</h1>
         <p className="mb-4">

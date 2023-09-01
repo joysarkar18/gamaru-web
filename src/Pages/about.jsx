@@ -2,10 +2,10 @@ import React from "react";
 import GlossyContainer from "../Componants/glossy";
 import ImageCard from "../Componants/imageCard";
 import Lottie from "lottie-react";
-import join from "../../public/assets/join.json";
-import arrow from "../../public/assets/rightArrow.json";
-import play from "../../public/assets/play.json";
-import earn from "../../public/assets/earn.json";
+import join from "../json/join.json";
+import arrow from "../json/rightArrow.json";
+import play from "../json/play.json";
+import earn from "../json/earn.json";
 
 const About = () => {
   return (
@@ -17,14 +17,14 @@ const About = () => {
 
         <GlossyContainer>
           <div className="flex gap-10 md:gap-16 md:flex-row flex-col">
-            <ImageCard src="public/assets/bgmiLogo.jpg" name="BGMI"></ImageCard>
+            <ImageCard src="/assets/bgmiLogo.jpg" name="BGMI"></ImageCard>
             <ImageCard
-              src="public/assets/freeFire_game.png"
+              src="/assets/freeFire_game.png"
               name="FREE FIRE"
             ></ImageCard>
-            <ImageCard src="public/assets/lodoLogo.png" name="LUDO"></ImageCard>
+            <ImageCard src="/assets/lodoLogo.png" name="LUDO"></ImageCard>
             <ImageCard
-              src="public/assets/carromLogok.png"
+              src="/assets/carromLogok.png"
               name="CARROM"
             ></ImageCard>
           </div>

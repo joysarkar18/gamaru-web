@@ -12,7 +12,7 @@ const Footer = () => {
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
               <a href="https://flowbite.com/" class="flex items-center">
-                  <img src="public/assets/gamaru.png" class="h-24 mr-3" alt="Gamaru Logo" />
+                  <img src="/assets/gamaru.png" class="h-24 mr-3" alt="Gamaru Logo" />
                  
               </a>
           </div>

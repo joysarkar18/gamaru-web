@@ -1,7 +1,7 @@
 import React from "react";
 import DownloadNow from "../Componants/downloadNow";
 import Lottie from "lottie-react";
-import cash from "../../public/assets/cash.json";
+import cash from "../json/cash.json";
 
 const Home = () => {
   const carouselItems = [
@@ -40,12 +40,12 @@ const Home = () => {
      
       
       <div className="md:h-3/6 md:w-3/12 h-2/3 w-3/4 block md:hidden mt-4">
-        <img height={100} src="../../public/assets/bgmiP.png" alt="bgmi"></img>
+        <img height={100} src="/assets/bgmiP.png" alt="bgmi"></img>
       </div>
 
       <div className="flex flex-col md:flex-row items-start justify-center">
         <div className="md:h-3/6 md:w-3/12 hidden md:block">
-          <img height={100} src="../../public/assets/bgmiP.png" alt="bgmi"></img>
+          <img height={100} src="/assets/bgmiP.png" alt="bgmi"></img>
         </div>
 
         <div className="flex flex-col justify-end items-center md:h-54 md:w-5/12 md:mt-24 mt-4">
@@ -66,7 +66,7 @@ const Home = () => {
         </div>
 
         <div className="h-3/6 w-3/12 hidden md:block">
-          <img height={100} src="../../public/assets/freeFire.png" alt="bgmi"></img>
+          <img height={100} src="/assets/freeFire.png" alt="bgmi"></img>
         </div>
       </div>
 

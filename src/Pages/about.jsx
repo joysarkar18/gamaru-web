@@ -9,7 +9,7 @@ import earn from "../json/earn.json";
 
 const About = () => {
   return (
-    <div>
+    <div name="about">
       <div className="h-full bg-slate-800 flex flex-col items-center">
         <h1 className="text-gray-200 text-2xl md:text-4xl font-extrabold mb-4">
           Available Games & Contests

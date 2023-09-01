@@ -1,29 +1,37 @@
-import { useState } from 'react'
-import NavBar from './Componants/navBar'
-import Home from './Pages/home'
-import About from './Pages/about';
-import TermConditions from './Pages/termConditions';
-import Features from './Pages/features';
+
+
+import { Routes, Route } from 'react-router-dom';
+import First from './first';
 import PrivacyPolicy from './Pages/privacyPolicy';
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
-  const [nav, setNav] = useState(false);
+ 
 
   return (
     <>
-      <div className='text-lg'>
-        <NavBar nav={nav} setNav = {setNav}></NavBar>
-        <Home></Home>
-        <About></About>
-        <TermConditions></TermConditions>
-        <PrivacyPolicy></PrivacyPolicy>
-        <Features></Features>
+    
+    <Routes>
+        <Route path="/" element={<First />}>
+          
+
+          
+        </Route>
+        <Route path="privacy-policy" element={<PrivacyPolicy />} />
+      </Routes>
+
+       
+
 
         
-      </div>
+       
+
+        
+      
+
+        
+      
     </>
   )
 }

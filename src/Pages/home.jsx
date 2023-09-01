@@ -10,7 +10,7 @@ const Home = () => {
     <h1 className="text-4xl">Slide 3</h1>,
   ];
   return (
-    <div className=" flex flex-col items-center h-full bg-slate-800 pb-10">
+    <div name="home" className=" flex flex-col items-center h-full bg-slate-800 pb-10">
       <div className="flex flex-col items-center md:flex md:flex-row">
         <h1 className="pt-28 md:pt-40  text-gray-200 md:text-6xl text-3xl font-extrabold">
           Play Games and Win cash{" "}

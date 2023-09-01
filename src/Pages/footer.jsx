@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         
-<div className='flex flex-col items-center bg-slate-800'>
+<div name="contact" className='flex flex-col items-center bg-slate-800'>
 <h1 className="text-gray-200  text-3xl md:text-5xl font-extrabold pb-10 pt-5">
         Contact Us
       </h1>

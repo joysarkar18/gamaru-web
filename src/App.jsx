@@ -13,24 +13,10 @@ function App() {
     <>
     
     <Routes>
-        <Route path="/" element={<First />}>
-          
-
-          
+        <Route path="/" element={<First />}> 
         </Route>
         <Route path="privacy-policy" element={<PrivacyPolicy />} />
-      </Routes>
-
-       
-
-
-        
-       
-
-        
-      
-
-        
+      </Routes>    
       
     </>
   )

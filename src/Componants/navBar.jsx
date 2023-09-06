@@ -7,13 +7,10 @@ const NavBar = (props) => {
     { id: 1, link: "home" },
 
     { id: 2, link: "about" },
-    { id: 4, link: "terms & conditions" },
+    { id: 3, link: "terms & conditions" },
     { id: 4, link: "privacy policy" },
-
-  
-
     { id: 5, link: "contact" },
-    { id: 3, link: "admin" },
+
   ];
   return (
     <div className="fixed w-screen z-30">

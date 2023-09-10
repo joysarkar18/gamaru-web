@@ -7,7 +7,7 @@ import { saveAs } from 'file-saver'
 const Home = () => {
 
   const downloadApp = () => {
-    saveAs("https://firebasestorage.googleapis.com/v0/b/gamaru-mobile-app.appspot.com/o/base%20(2).apk?alt=media&token=dd9e1a0e-b9d5-4241-92c1-92a8d936df17", 'gamaru' +".pdf") // Put your image url here.
+    saveAs("https://firebasestorage.googleapis.com/v0/b/gamaru-mobile-app.appspot.com/o/gamaru.apk?alt=media&token=6fcfb114-3a05-49b5-a1a5-59ce04d01fbb", 'gamaru' +".apk") // Put your image url here.
   }
   const carouselItems = [
     <h1 className="text-4xl">Slide 1</h1>,
@@ -35,6 +35,7 @@ const Home = () => {
       </div>
       <div className="mt-3 md:hidden block">
       <button
+      onClick={downloadApp}
             type="button"
             class="text-lg text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2"
           >
@@ -63,6 +64,7 @@ const Home = () => {
           </h1>
           <div className="md:h-24 h-3"></div>
           <button
+          onClick={downloadApp}
             type="button"
             class="text-lg text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg px-5 py-2.5 text-center mr-2 mb-2"
           >

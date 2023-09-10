@@ -2,8 +2,13 @@ import React from "react";
 import DownloadNow from "../Componants/downloadNow";
 import Lottie from "lottie-react";
 import cash from "../json/cash.json";
+import { saveAs } from 'file-saver'
 
 const Home = () => {
+
+  const downloadApp = () => {
+    saveAs("https://firebasestorage.googleapis.com/v0/b/gamaru-mobile-app.appspot.com/o/base%20(2).apk?alt=media&token=dd9e1a0e-b9d5-4241-92c1-92a8d936df17", 'gamaru' +".pdf") // Put your image url here.
+  }
   const carouselItems = [
     <h1 className="text-4xl">Slide 1</h1>,
     <h1 className="text-4xl">Slide 2</h1>,

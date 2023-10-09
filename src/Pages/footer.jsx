@@ -21,7 +21,7 @@ const Footer = () => {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Contacts</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://flowbite.com/" class="hover:underline">+91-9064983473</a>
+                          <a href="https://flowbite.com/" class="hover:underline">+91-8509718465</a>
                       </li>
                       <li>
                           <a href="https://tailwindcss.com/" class="hover:underline">+91-8250260794</a>
@@ -32,10 +32,10 @@ const Footer = () => {
                   <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Emails</h2>
                   <ul class="text-gray-500 dark:text-gray-400 font-medium">
                       <li class="mb-4">
-                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">gamaru1@gmail.com</a>
+                          <a href="https://github.com/themesberg/flowbite" class="hover:underline ">app.gamaru@gmail.com</a>
                       </li>
                       <li>
-                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">gamaru@gmail.com</a>
+                          <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">app.gamaru@gmail.com</a>
                       </li>
                   </ul>
               </div>

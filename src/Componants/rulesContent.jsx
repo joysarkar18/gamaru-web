@@ -41,7 +41,7 @@ const RulesComponent = () => {
           <strong>Timely Participation:</strong>
           <ul>
             <li style={listItemStyle}>
-              Participants must join the room before the match start time.
+              Participants must join the room before the 2 minutes of starting time.
             </li>
             <li style={listItemStyle}>
               Failure to do so absolves responsibility for any joining issues.
@@ -58,7 +58,7 @@ const RulesComponent = () => {
               Do not share room ID and password with non-participants.
             </li>
             <li style={listItemStyle}>
-              Unauthorized sharing can lead to account termination and loss of
+              Unauthorized sharing can lead to permanent ban from the platfrom and loss of
               winnings.
             </li>
           </ul>
@@ -67,10 +67,13 @@ const RulesComponent = () => {
           <strong>Fair Play:</strong>
           <ul>
             <li style={listItemStyle}>
-              Griefing and teaming are against game rules.
+              Griefing and teaming up are against game rules.
             </li>
             <li style={listItemStyle}>
               Violators will be disqualified and lose their prizes.
+            </li>
+            <li style={listItemStyle}>
+            Any team found engaging in hacking or any form of cheating will face a permanent ban from the platform, as well as forfeiture of their winnings.
             </li>
           </ul>
         </li>
@@ -78,11 +81,11 @@ const RulesComponent = () => {
           <strong>Room ID and Password Timing:</strong>
           <ul>
             <li style={listItemStyle}>
-              Room ID and password will be provided in the app 8 minutes before
+              Room ID and password will be provided in the app 10-12 minutes before
               the match start time.
             </li>
             <li style={listItemStyle}>
-              Match begins 8 minutes after sharing the details.
+              Match begins 10 minutes after sharing the details.
             </li>
             <li style={listItemStyle}>
               Participants must ensure they have the details before the match

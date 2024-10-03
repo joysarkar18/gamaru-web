@@ -5,77 +5,80 @@ import { Link } from "react-scroll";
 const NavBar = (props) => {
   const links = [
     { id: 1, link: "home" },
-
     { id: 2, link: "about" },
     { id: 3, link: "terms & conditions" },
     { id: 4, link: "privacy policy" },
     { id: 5, link: "contact" },
-
   ];
+
   return (
-    <div className="fixed w-screen z-30">
-      <nav class="bg-white border-gray-200 dark:bg-gray-900">
-        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" class="flex items-center">
-            <img
-              src="/assets/gamaru.png"
-              class="h-12 mr-3"
-              alt="Flowbite Logo"
+    <div className="fixed w-screen z-50 backdrop-blur-md bg-white/30 dark:bg-gray-900/50 shadow-md transition-all duration-300">
+      <nav className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
+        <a href="#" className="flex items-center">
+          <img
+            src="/assets/gamaru.png"
+            className="h-12 mr-3 hover:scale-105 transition-transform duration-300"
+            alt="Logo"
+          />
+        </a>
+
+        <div className="hidden w-full md:block md:w-auto">
+          <ul className="font-medium flex flex-col md:flex-row md:space-x-8 text-gray-900 dark:text-gray-300">
+            {links.map((link) => (
+              <li key={link.id}>
+                <Link
+                  to={link.link}
+                  smooth
+                  duration={500}
+                  className="relative group"
+                >
+                  <span className="capitalize text-lg hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 transition-all duration-300 cursor-pointer">
+                    {link.link}
+                  </span>
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-purple-400 to-red-500 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div
+          onClick={() => props.setNav(!props.nav)}
+          className="cursor-pointer text-gray-600 dark:text-gray-300 z-20 md:hidden"
+        >
+          {props.nav ? (
+            <FaTimes
+              size={30}
+              className="hover:rotate-90 transition-transform duration-300"
             />
-          </a>
-
-          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              {links.map((link) => {
-                return (
-                  <li>
-                    <Link to={link.link} smooth duration={500}>
-                      <a
-                        href="#"
-                        class="capitalize hover:text-purple-600 block py-2 pl-3 pr-4 text-white rounded md:bg-transparent md:p-0 dark:text-gray-300"
-                      >
-                        {link.link}
-                      </a>
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-
-          <div
-            onClick={() => {
-              props.setNav(!props.nav);
-            }}
-            className="cursor-pointer text-gray-600 z-20 md:hidden"
-          >
-            {props.nav ? (
-              <FaTimes size={30}></FaTimes>
-            ) : (
-              <FaBars size={30}></FaBars>
-            )}
-          </div>
+          ) : (
+            <FaBars
+              size={30}
+              className="hover:scale-110 transition-transform duration-300"
+            />
+          )}
         </div>
       </nav>
 
       {props.nav && (
-        <nav className="flex md:hidden align-top justify-end z-10 ">
-          <div className="h-full w-52 bg-gray-900 ">
-            <ul class="font-medium flex flex-col p-4 md:p-0  bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-900 md:dark:bg-gray-900 dark:border-gray-900">
-              {links.map((link) => {
-                return (
-                  <li>
-                    <Link to={link.link} smooth duration={500}>
-                      <a
-                        href="#"
-                        class="capitalize hover:text-teal-50 block py-3 pl-3 pr-4 text-whit rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                      >
-                        {link.link}
-                      </a>
-                    </Link>
-                  </li>
-                );
-              })}
+        <nav className="flex md:hidden justify-end z-10">
+          <div className="h-screen w-64 bg-white/20 dark:bg-gray-800/20 backdrop-blur-lg shadow-lg border border-white/30 dark:border-gray-700 rounded-lg transition-all duration-500 ease-in-out">
+            <ul className="font-medium flex flex-col p-4 space-y-6 text-white">
+              {links.map((link) => (
+                <li key={link.id}>
+                  <Link
+                    to={link.link}
+                    smooth
+                    duration={500}
+                    className="relative group"
+                  >
+                    <span className="capitalize text-lg bg-white/20 dark:bg-gray-900/20 backdrop-blur-lg p-3 rounded-lg hover:bg-white/30 hover:backdrop-blur-md hover:shadow-xl transition-all duration-300 cursor-pointer">
+                      {link.link}
+                    </span>
+                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-teal-400 scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </nav>

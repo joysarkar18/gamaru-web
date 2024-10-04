@@ -5,14 +5,14 @@ import { motion } from "framer-motion";
 const RulesComponent = () => {
   return (
     <div className="p-4 md:p-8 bg-gradient-to-b from-gray-900 to-black min-h-screen">
-      <h1 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+      <h1 className="text-3xl md:text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 mb-8">
         Game Rules
       </h1>
       <ol className="space-y-6">
         {rulesData.map((rule, index) => (
           <motion.li
             key={index}
-            className="bg-gray-800 p-4 rounded-lg shadow-md"
+            className="bg-gray-800/50 p-6 rounded-lg shadow-lg border border-gray-700 backdrop-blur-lg transition-all duration-300"
             initial={{ opacity: 0, translateY: 10 }}
             whileInView={{ opacity: 1, translateY: 0 }}
             viewport={{ once: false, amount: 0.5 }}
@@ -25,11 +25,11 @@ const RulesComponent = () => {
             <strong className="text-lg md:text-xl text-white">
               {rule.title}
             </strong>
-            <ul className="mt-2 list-disc list-inside">
+            <ul className="mt-2 list-disc list-inside space-y-3">
               {rule.details.map((detail, idx) => (
-                <li key={idx} className="flex items-start text-gray-300 mt-3">
+                <li key={idx} className="flex items-start text-gray-300">
                   <FaCheckCircle
-                    className="text-green-500 mr-3"
+                    className="text-teal-400 mr-3"
                     style={{ fontSize: "1.25rem" }}
                   />
                   <span className="text-sm md:text-base">{detail}</span>

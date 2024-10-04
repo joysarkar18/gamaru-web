@@ -45,7 +45,7 @@ const Cardx = ({ logo, heading, details }) => {
       </h2>
 
       {details && (
-        <p className="text-center text-gray-700 dark:text-gray-300 transition-opacity duration-500">
+        <p className="relative z-10 text-center text-gray-700 dark:text-gray-300 transition-opacity duration-500">
           {details}
         </p>
       )}

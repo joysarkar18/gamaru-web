@@ -5,78 +5,94 @@ import Footer from "./footer";
 
 const Features = () => {
   return (
-    <div className="bg-slate-800 h-screen flex flex-col items-center">
-      <h1 className="text-gray-200 text-3xl md:text-5xl font-extrabold pb-5 pt-5">
+    <div className="bg-gradient-to-b from-gray-900 to-black min-h-screen flex flex-col items-center py-12 px-6 md:px-12">
+      <h1 className="text-gray-200 text-3xl md:text-5xl font-extrabold pb-8 uppercase tracking-wide">
         Features
       </h1>
+
       <GlossyContainer>
-        <div className="columns-1 md:columns-3 gap-44">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 justify-items-center">
           <Cardx
             logo={
-              <img src="/assets/gPay.webp" alt="Logo" className="logo-img" />
+              <img
+                src="/assets/gPay.webp"
+                alt="Instant Withdraw"
+                className="w-20 h-20 object-contain"
+              />
             }
             heading="Instant Withdraw"
-            details="Get instant withdraw to your UPI Id."
+            details="Get instant withdraws to your UPI Id."
           />
-          <div className="md:h-0 h-10"></div>
-            
+
           <Cardx
             logo={
-              <img src="/assets/coins.png" alt="Logo" className="logo-img" />
+              <img
+                src="/assets/coins.png"
+                alt="Prizes per Kill Event"
+                className="w-20 h-20 object-contain"
+              />
             }
             heading="Prizes per Kill Event"
-            details="Get prizes not only for winning also for kills."
+            details="Earn prizes not just for winning, but also for kills."
           />
-          <div className="md:h-0 h-10"></div>
 
           <Cardx
             logo={
               <img
                 src="/assets/banPan.png"
-                alt="Logo"
-                className="logo-img"
+                alt="BanPan for Hackers"
+                className="w-20 h-20 object-contain"
               />
             }
             heading="BanPan for Hackers"
-            details="No Hackers allowed banpan securety."
+            details="Advanced security to prevent hackers."
           />
         </div>
-        <div className="md:h-20 h-10"></div>
 
-        <div className="columns-1 md:columns-3 gap-32">
+        <div className="md:h-16 h-10"></div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 justify-items-center">
           <Cardx
             logo={
-              <img src="/assets/reee.png" alt="Logo" className="logo-img" />
+              <img
+                src="/assets/reee.png"
+                alt="Refer Friends & Earn"
+                className="w-20 h-20 object-contain"
+              />
             }
             heading="Refer Friends & Earn"
-            details="Additional details about the card."
+            details="Refer your friends and earn additional rewards."
           />
-          <div className="md:h-0 h-10"></div>
 
           <Cardx
             logo={
-              <img src="/assets/liveStram.png" alt="Logo" className="logo-img" />
+              <img
+                src="/assets/liveStram.png"
+                alt="Live Stream of Event"
+                className="w-20 h-20 object-contain"
+              />
             }
-            heading="Live Stream of Evevnt"
-            details="Additional details about the card."
+            heading="Live Stream of Event"
+            details="Watch live streams of ongoing events."
           />
-          <div className="md:h-0 h-10"></div>
 
           <Cardx
             logo={
               <img
                 src="/assets/customer.png"
-                alt="Logo"
-                className="logo-img"
+                alt="24x7 Customer Support"
+                className="w-20 h-20 object-contain"
               />
             }
             heading="24x7 Customer Support"
-            details="Additional details about the card."
+            details="We're here to help you anytime, anywhere."
           />
         </div>
       </GlossyContainer>
 
-      <Footer></Footer>
+      <div className="mt-16">
+        <Footer />
+      </div>
     </div>
   );
 };
